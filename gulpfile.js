@@ -48,15 +48,14 @@
                 .pipe(browserSync.reload({stream: true}))
         });
 
+        gulp.task('compress', function() {
+            gulp.src('app/js/script.js')
+                .pipe(minify())
+                .pipe(gulp.dest('app/js'))
+        });
+
         gulp.task('script', function () {
             return gulp.src('app/js/*.js')
-                .pipe(minify({
-                    ext: {
-                        min: '.min.js'
-                    },
-                    ignoreFiles: ['-min.js']
-                }))
-                .pipe(gulp.dest('app/js/*.js'))
                 .pipe(browserSync.reload({stream: true}))
         });
 
@@ -98,4 +97,4 @@
 
         gulp.task('build', gulp.series('clean', 'export'));
 
-        gulp.task('default', gulp.parallel('css', 'scss', 'js', 'browser-sync', 'watch'));
+        gulp.task('default', gulp.parallel('css', 'scss', 'js', 'compress', 'browser-sync', 'watch'));
