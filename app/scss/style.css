@@ -568,16 +568,10 @@ template {
   align-items: center;
   min-height: 53px;
 }
-.header .menu-categories__item {
-  position: relative;
-}
 .header .menu-categories__link {
   padding: 15px 0 14px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   transition: all ease-in-out 0.5s;
+  position: relative;
 }
 .header .menu-categories__link::before {
   content: "";

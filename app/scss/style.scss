@@ -72,16 +72,15 @@
         justify-content: space-around;
         align-items: center;
         min-height: 53px;
-        &__item{
-          position: relative;
-        }
+
         &__link {
           padding: 15px 0 14px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+          //position: absolute;
+          //top: 50%;
+          //left: 50%;
+          //transform: translate(-50%, -50%);
           transition: all ease-in-out .5s;
+          position: relative;
 
           &::before{
             content: '';
@@ -100,7 +99,6 @@
           &:hover:before{
             width: 100%;
            left: 0; right: auto;
-
           }
         }
       }
