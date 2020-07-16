@@ -112,12 +112,15 @@
       &__inner{
         display: flex;
         justify-content: space-between;
-        align-items: center;
-
       }
 
       &__slider{
         max-width: 870px;
+        max-height: 400px;
+
+        &-img{
+          object-fit: contain;
+        }
 
         &-btn{
           position: absolute;
@@ -158,15 +161,101 @@
         }
       }
 
-      &__item{
+    }
+    .price{
+      font-family: Barlow, sans-serif;
+    }
+    .sale-item{
         max-width: 265px;
         text-align: center;
+        border: 1px solid #CDCDCD;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: column;
+      justify-content: space-between;
 
+      &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      &__info{
+        color: #fff;
+        padding: 8px 20px;
+        background-color: #1C62CD;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
       }
 
+      &__price{
+        text-align: right;
+      }
 
+      &__price-new{
+        font-weight: bold;
+        font-size: 27px;
+        line-height: 32px;
+        color: #1C62CD;
+        margin: 12px 6px 0 0;
+        padding-right: 20px;
+        position: relative;
 
+        &::after{
+          content: '';
+          background-image: url("../img/icons-price.svg");
+          background-repeat: no-repeat;
+          width: 15px;
+          height: 18px;
+          position: absolute;
+          right: 0; bottom: 6px;
+        }
+      }
+      &__price-old{
+        color: #C4C4C4;
+        font-size: 14px;
+        line-height: 17px;
+        margin-right: 11px;
+        padding: 2px 5px;
+        position: relative;
+        display: inline-block;
+        background-image: url("../img/price-line.svg");
+        background-repeat: no-repeat;
 
+        &::after{
+          content: '';
+          background-image: url("../img/icons-price2.svg");
+          background-repeat: no-repeat;
+          width: 8px;
+          height: 10px;
+          position: absolute;
+          right: -8px; top: 5px;
+        }
+      }
+      &__footer{
+        padding: 25px 10px;
+        background-color: #F0F0F4;
+        margin-top: 7px;
+        font-size: 18px;
+        line-height: 21px;
+        span{
+          display: block;
+          font-family: Barlow, sans-serif;
+          font-weight: 700;
+          color: #1C62CD;
+        }
+      }
+      &__title{
+        font-family:"SFProDisplay-Bold", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+      }
+      &__img{
+        object-fit: contain;
+        object-position: 34% 50%;
+      }
     }
 
 
