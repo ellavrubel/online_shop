@@ -105,6 +105,73 @@
     }
 
 
+    // banner-section
+
+    .banner-section{
+
+      &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+      }
+
+      &__slider{
+        max-width: 870px;
+
+        &-btn{
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 5;
+        }
+
+        &-btnLeft{
+          left: 20px;
+        }
+        &-btnRight{
+          right: 20px;
+        }
+      }
+
+      .slick-dots{
+        position: absolute;
+        bottom: 40px;
+        left: 0; right: 0;
+        text-align: center;
+        li{
+          display: inline-block;
+          padding: 0 5px;
+        }
+        button{
+          font-size: 0;
+          line-height: unset;
+          width: 11px;
+          height: 11px;
+          border-radius: 50%;
+          border: 1px solid #fff;
+        }
+      }
+      .slick-active{
+        button{
+          background-color: #fff;
+        }
+      }
+
+      &__item{
+        max-width: 265px;
+        text-align: center;
+
+      }
+
+
+
+
+    }
+
+
+
+
 
 
 

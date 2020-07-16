@@ -24,6 +24,15 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
 body {
   overflow-x: hidden;
   color: #2F3035;
@@ -591,6 +600,53 @@ template {
   width: 100%;
   left: 0;
   right: auto;
+}
+
+.banner-section__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-section__slider {
+  max-width: 870px;
+}
+.banner-section__slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+.banner-section__slider-btnLeft {
+  left: 20px;
+}
+.banner-section__slider-btnRight {
+  right: 20px;
+}
+.banner-section .slick-dots {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.banner-section .slick-dots li {
+  display: inline-block;
+  padding: 0 5px;
+}
+.banner-section .slick-dots button {
+  font-size: 0;
+  line-height: unset;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+.banner-section .slick-active button {
+  background-color: #fff;
+}
+.banner-section__item {
+  max-width: 265px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

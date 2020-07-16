@@ -24,6 +24,15 @@
     margin: 0;
   }
 
+  button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    outline: none;
+  }
+
   body{
     overflow-x: hidden;
     color: #2F3035;
@@ -38,3 +47,4 @@
     padding: 0 15px;
     margin: 0 auto;
   }
+
