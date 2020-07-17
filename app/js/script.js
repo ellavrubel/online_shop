@@ -14,14 +14,14 @@
 
     //    tabs - main page
 
-        $('.search__tabs-item').on('click', function(e) {
+        $('.tab').on('click', function(e) {
                 e.preventDefault();
 
-                $('.search__tabs-item').removeClass('search__tabs-item--active');
-                $('.search__content-item').removeClass('search__content-item--active');
+                $('.tab').removeClass('tab--active');
+                $('.tabs-content').removeClass('tabs-content--active');
 
-                $(this).addClass('search__tabs-item--active');
-                $($(this).attr('href')).addClass('search__content-item--active');
+                $(this).addClass('tab--active');
+                $($(this).attr('href')).addClass('tabs-content--active');
 
 
         });

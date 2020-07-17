@@ -262,25 +262,25 @@
 
     .search{
 
+      .tab--active{
+        font-family:"SFProDisplay-Bold", sans-serif;
+        border-radius: 5px;
+        background-color: #F0F0F4;
+        font-weight: 700;
+      }
+
       &__tabs{
         margin-bottom: 30px;
       }
       &__tabs-item{
         padding: 11px 26px 12px;
-
-        &--active{
-          font-family:"SFProDisplay-Bold", sans-serif;
-          border-radius: 5px;
-          background-color: #F0F0F4;
-          font-weight: 700;
-        }
       }
 
-      &__content-item{
+      .tabs-content{
         display: none;
       }
 
-      &__content-item--active{
+      .tabs-content--active{
         display: block;
       }
 
