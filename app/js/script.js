@@ -27,6 +27,15 @@
         });
 
 
+    //    favorite-icons
+
+        $('.products__item-favorite').on('click', function () {
+
+            $(this).toggleClass('products__item-favorite--active');
+
+        });
+
+
 
 
 
