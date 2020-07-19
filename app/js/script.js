@@ -1,5 +1,7 @@
     $(function () {
 
+        // slider-1
+
         $('.banner-section__slider').slick({
 
             dots: true,
@@ -32,6 +34,21 @@
         $('.products__item-favorite').on('click', function () {
 
             $(this).toggleClass('products__item-favorite--active');
+
+        });
+
+
+    //    slider-2
+
+        $('.products-slider').slick({
+
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1, prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnLeft products-left-grey"><img src="img/arrow-left-grey.svg" alt=""></button>',
+            nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnRight products-right-grey"><img src="img/arrow-right-grey.svg" alt=""></button>'
+
+
+
 
         });
 

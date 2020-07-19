@@ -57,6 +57,14 @@ body {
   padding-bottom: 80px;
 }
 
+.tabs-content {
+  display: none;
+}
+
+.tabs-content.tabs-content--active {
+  display: block;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -760,12 +768,6 @@ template {
 .search__tabs-item {
   padding: 11px 26px 12px;
 }
-.search .tabs-content {
-  display: none;
-}
-.search .tabs-content--active {
-  display: block;
-}
 .search__content-form {
   display: flex;
 }
@@ -843,18 +845,35 @@ template {
   padding-left: 3px;
 }
 
+.products__title {
+  margin-bottom: 25px;
+  font-family: Barlow, sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+.products__tab {
+  font-size: 15px;
+  line-height: 18px;
+  margin: 0 50px 15px 0;
+  padding-bottom: 10px;
+  position: relative;
+}
+.products .products__tab.tab--active {
+  border-bottom: 2px solid #1C62CD;
+}
 .products__item-wrapper {
   position: relative;
   border: 1px solid #CDCDCD;
   border-radius: 3px;
   text-align: center;
   padding: 52px 20px 31px;
-  width: 271px;
   transition: all ease-in-out 0.3s;
+  width: 271px;
+  height: 403px;
 }
 .products__item-wrapper:hover {
   box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
-  color: #1C62CD;
 }
 .products__item-title {
   font-weight: normal;
@@ -890,7 +909,10 @@ template {
   border-radius: 10px 0 0 0;
   width: 60px;
   height: 40px;
-  padding-top: 5px;
+  padding: 5px 0 0 0;
+}
+.products__item-basket img {
+  display: inline-block;
 }
 .products__item-price {
   font-family: Barlow, sans-serif;
@@ -906,9 +928,16 @@ template {
   border-radius: 3px;
   position: absolute;
   top: 30%;
+  left: 0;
+  right: 0;
+  width: 80%;
+  margin: 0 auto;
   display: inline-block;
   opacity: 0;
   transition: all ease-in-out 0.3s;
+}
+.products-item:hover {
+  color: #1C62CD;
 }
 .products-item:hover .products__item-hover-text {
   opacity: 1;
@@ -944,6 +973,24 @@ template {
   text-decoration: underline;
   display: none;
 }
+.products-left-grey {
+  left: -34px;
+}
+.products-right-grey {
+  right: -10px;
+}
+.products__btn {
+  margin-top: 35px;
+  text-align: center;
+}
+.products__btn-link {
+  padding: 17px 43px;
+  background-color: #F0F0F4;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
 
 .products__item-wrapper.products-item__not-available .products__item-price {
   display: none;
@@ -961,7 +1008,7 @@ template {
 .products__item-wrapper.products-item__not-available .products-item__notify-link {
   display: block;
   position: absolute;
-  bottom: 16px;
+  bottom: 35px;
   left: 0;
   right: 0;
 }
