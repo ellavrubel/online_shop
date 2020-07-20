@@ -64,4 +64,9 @@
   .tabs-content.tabs-content--active{
     display: block;
   }
+  .slick-initialized.slick-slider{
+    img{
+      display: inline;
+    }
+  }
 
