@@ -577,48 +577,105 @@
 
     // footer
 
-    .footer{
+    .footer {
       background-color: #F0F0F4;
 
-      &__top{
+      &__top {
         padding-top: 43px;
 
-        &-newsletter{
-          width: 295px;
+        &-item {
+          width: 200px;
         }
 
-        &-title{
-          font-family:"SFProDisplay-Bold", sans-serif;
+        &-newsletter {
+          width: 295px;
+          margin-right: 91px;
+        }
+
+        &-item3{
+          transform: translateX(-33px);
+        }
+
+        &-title {
+          font-family: "SFProDisplay-Bold", sans-serif;
           font-weight: 700;
           font-size: 14px;
           line-height: 17px;
+          margin-top: 15px;
+
+          &--newsletter {
+            margin-top: 0;
+          }
+        }
+        &-social {
+          width: 250px;
+          margin-right: 75px;
         }
       }
 
-      &__form{
-        padding-top: 34px;
+      .social-list {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 16px;
       }
 
-      &__top-inner{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      &__bottom{
-        display: flex;
-        justify-content: center;
-        padding: 46px 0 27px;
-
-        &-link{
-          color: #48494D;
-          font-size: 10px;
-          line-height: 12px;
-          margin: 0 40px;
+        &__form {
+          padding-top: 34px;
+          display: flex;
+          justify-content: space-between;
         }
+
+        &__form-input {
+          border: none;
+          padding: 0 12px;
+          width: 70%;
+
+          &::placeholder {
+            color: #C4C4C4;
+            font-size: 14px;
+            line-height: 17px;
+          }
+        }
+
+        &-list {
+          font-size: 14px;
+          line-height: 22px;
+        }
+
+        &__form-btn {
+          text-transform: uppercase;
+          font-family: "SFProDisplay-Semibold", sans-serif;
+          font-weight: 600;
+          font-size: 11px;
+          line-height: 13px;
+          text-align: center;
+          letter-spacing: 0.12em;
+          background: #1C62CD;
+          color: #fff;
+          padding: 10px 16px;
+        }
+
+        &__top-inner {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        &__bottom {
+          display: flex;
+          justify-content: center;
+          padding: 46px 0 27px;
+
+          &-link {
+            color: #48494D;
+            font-size: 10px;
+            line-height: 12px;
+            margin: 0 40px;
+          }
+        }
+
       }
 
-    }
 
 
 

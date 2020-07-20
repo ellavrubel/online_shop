@@ -1055,17 +1055,65 @@ template {
 .footer__top {
   padding-top: 43px;
 }
+.footer__top-item {
+  width: 200px;
+}
 .footer__top-newsletter {
   width: 295px;
+  margin-right: 91px;
+}
+.footer__top-item3 {
+  transform: translateX(-33px);
 }
 .footer__top-title {
   font-family: "SFProDisplay-Bold", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
+  margin-top: 15px;
+}
+.footer__top-title--newsletter {
+  margin-top: 0;
+}
+.footer__top-social {
+  width: 250px;
+  margin-right: 75px;
+}
+.footer .social-list {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 16px;
 }
 .footer__form {
   padding-top: 34px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__form-input {
+  border: none;
+  padding: 0 12px;
+  width: 70%;
+}
+.footer__form-input::placeholder {
+  color: #C4C4C4;
+  font-size: 14px;
+  line-height: 17px;
+}
+.footer-list {
+  font-size: 14px;
+  line-height: 22px;
+}
+.footer__form-btn {
+  text-transform: uppercase;
+  font-family: "SFProDisplay-Semibold", sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.12em;
+  background: #1C62CD;
+  color: #fff;
+  padding: 10px 16px;
 }
 .footer__top-inner {
   display: flex;
