@@ -673,8 +673,44 @@
             margin: 0 40px;
           }
         }
+      }
+
+
+    // Page 2 - catalog
+
+    // breadcrumbs
+
+    .breadcrumbs{
+      margin: -40px 0 40px;
+
+
+
+      &__list-item {
+        display: inline-block;
+        padding-right: 16px;
+        margin-right: 10px;
+        font-size: 15px;
+        line-height: 18px;
+        color: #C4C4C4;
+        position: relative;
+        &::after {
+          content: "";
+          background-image: url('../img/more.svg');
+          position: absolute;
+          right: -3px;
+          bottom: 5px;
+          width: 6px;
+          height: 9px;
+        }
+          &:last-child:after{
+            display: none;
+          }
+
+        }
 
       }
+
+
 
 
 
