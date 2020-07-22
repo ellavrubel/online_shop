@@ -398,7 +398,7 @@
         border: 1px solid #CDCDCD;
         border-radius: 3px;
         text-align: center;
-        padding: 52px 20px 31px;
+        padding: 20px 20px 31px;
         transition: all ease-in-out .3s;
         width: 271px;
         height: 403px;
@@ -683,8 +683,6 @@
     .breadcrumbs{
       margin: -40px 0 40px;
 
-
-
       &__list-item {
         display: inline-block;
         padding-right: 16px;
@@ -707,8 +705,101 @@
           }
 
         }
-
       }
+
+    // catalog
+
+    .catalog{
+      margin-bottom: 100px;
+
+      &__title{
+        font-family:"SFProDisplay-Bold", sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 26px;
+      }
+
+      &__filter{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 47px;
+
+        &-btnGrid{
+
+        }
+
+        &-btnLine{
+          margin-left: 10px;
+        }
+      }
+
+      &__filter-items{
+
+        button{
+          padding: 4px 28px 4px 22px;
+          background: #F0F0F4;
+          border-radius: 3px;
+          font-size: 14px;
+          line-height: 17px;
+          opacity: 0.7;
+
+        }
+        button + button{
+          margin-left: 8px;
+        }
+      }
+
+      &__inner{
+        display: flex;
+
+        &-aside{
+          flex: 0 0 302px;
+          margin-right: 10px;
+        }
+
+        &-list{
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          .products__item-wrapper{
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+
+    .pagination{
+      width: 100%;
+      margin-top: 70px;
+
+      &-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__item{
+          font-family: Barlow, sans-serif;
+          font-size: 18px;
+          line-height: 22px;
+          color: #C4C4C4;
+          padding: 5px 13px;
+          border: 2px solid transparent;
+
+          a{
+            display: block;
+          }
+        }
+        &__item + &__item{
+          margin-left: 10px;
+        }
+      }
+    }
+    .pagination-list__item.active{
+      padding: 5px 13px;
+      border: 2px solid #1C62CD;
+      color: #1C62CD;
+    }
 
 
 
