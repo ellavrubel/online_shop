@@ -816,6 +816,30 @@
       &__tab + &__tab{
         margin-left: 40px;
       }
+      &__item-drop{
+        margin: 40px 0;
+      }
+      &__item-title{
+        font-family:"SFProDisplay-Semibold", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        padding-left: 26px;
+      }
+
+      &__content{
+        display: flex;
+
+        &-label{
+          font-size: 14px;
+          line-height: 17px;
+          cursor: pointer;
+        }
+        &-box{
+          flex: 0 0 50%;
+        }
+      }
+
     }
     .aside-filter__tab.tab--active{
       font-family:"SFProDisplay-Bold", sans-serif;
@@ -823,8 +847,51 @@
       color: #2F3035;
       border-bottom: 2px solid #1C62CD;
     }
+    .filter__item-drop{
+      margin-bottom: 20px;
+      position: relative;
+      cursor: pointer;
 
+      &::before{
+        content: '';
+        width: 12px;
+        height: 8px;
+        background-image: url("../img/arrow-down.svg");
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        transform: rotate(0);
+        transition: all ease-in-out .4s;
+      }
+      &--active {
+        &::before {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    .jq-checkbox, .jq-radio{
+      width: 14px;
+      height: 14px;
+      border: 1px solid #C4C4C4;
+      background: #fff;
+      border-radius: 2px;
+      box-shadow: unset;
+      vertical-align: -2px;
+      margin: 0 10px 0 0;
+    }
+    .jq-checkbox.checked, .jq-radio.checked{
+      background: #1C62CD;
+      border: none;
 
+    }
+    .jq-checkbox.checked .jq-checkbox__div {
+      width: 8px;
+      height: 6px;
+      margin: 4px 0 0 3px;
+      border: none;
+      transform: rotate(0);
+      background-image: url("../img/white-checked.svg");
+    }
 
 
 
