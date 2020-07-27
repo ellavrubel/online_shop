@@ -56,7 +56,7 @@
         $('.filter-style').styler();
 
 
-        $('.filter__item-drop').on('click', function() {
+        $('.filter__item-drop ').on('click', function() {
 
             $(this).toggleClass('filter__item-drop--active');
 
@@ -71,10 +71,6 @@
         $(".js-range-slider").ionRangeSlider({
 
             type: "double",
-            min: 500000,
-            max: 3000000,
-            from: 650000,
-            to: 1700000,
             skin: "round"
 
         });

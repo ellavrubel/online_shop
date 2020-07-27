@@ -2808,11 +2808,28 @@ input[type=submit].styler[disabled] {
   font-style: normal;
   font-size: 14px;
   line-height: 17px;
-  text-decoration-line: underline;
+  text-decoration: underline;
   color: #2F3035;
   background: transparent;
-  padding: 0;
   border-radius: 0;
+  padding: 0 0 0 26px;
+}
+
+.irs--round .irs-min::before,
+.irs--round .irs-max::before {
+  font-size: 14px;
+  line-height: 17px;
+  color: #C4C4C4;
+  position: absolute;
+  left: 0;
+}
+
+.irs--round .irs-min::before {
+  content: "от";
+}
+
+.irs--round .irs-max::before {
+  content: "до";
 }
 
 .irs--round .irs-line {
@@ -2823,6 +2840,88 @@ input[type=submit].styler[disabled] {
 .irs--round .irs-bar {
   top: 36px;
   height: 2px;
+}
+
+.aside-filter__item-list {
+  margin: 80px 0 40px;
+}
+
+.filter__item-list {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #C4C4C4;
+}
+
+.filter-style__list-item {
+  font-family: Barlow, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.jq-selectbox__select {
+  font-family: Barlow, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #48494D;
+  height: 32px;
+  padding: 0 32px 0 10px;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  text-shadow: none;
+  border: none;
+}
+.jq-selectbox__select:hover {
+  background: transparent;
+}
+
+.jq-selectbox__select-text {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.jq-selectbox__trigger {
+  border-left: none;
+}
+
+.jq-selectbox__trigger-arrow {
+  right: 16px;
+  top: 7px;
+  width: 12px;
+  height: 8px;
+  background-image: url(../img/arrow-down.svg);
+  border: none;
+  transform: rotate(0);
+  transition: all ease-in-out 0.4s;
+}
+
+.jq-selectbox li {
+  color: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px 0;
+}
+
+.jq-selectbox li.selected,
+.jq-selectbox li:hover {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.jq-selectbox__dropdown {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 2px 0 0;
+  padding: 15px 19px 15px -1px;
+  border: 1px solid #E0E0E0;
+  border-radius: 0;
+  box-shadow: none;
+  top: 19px;
+  z-index: 10;
+  cursor: pointer;
+}
+.jq-selectbox__dropdown ul:first-child {
+  padding-top: 8px;
+}
+.jq-selectbox__dropdown ul:last-child {
+  padding-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
