@@ -60,7 +60,7 @@
 
             $(this).toggleClass('filter__item-drop--active');
 
-            $(this).next().slideToggle(200);
+            $(this).next().slideToggle(400);
 
         });
 

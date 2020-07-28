@@ -849,10 +849,35 @@
         }
         &-box{
           width: 50%;
+          &--brand{
+            margin-bottom: 20px;
+          }
         }
       }
-
+      &__btn{
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration-line: underline;
+        color: #1C62CD;
+      }
     }
+    .filter__more,
+    .aside-filter__content-text{
+      width: 100%;
+    }
+    .filter-text{
+      border: 1px solid #E0E0E0;
+      padding: 4px 20px;
+      margin-bottom: 20px;
+
+      &::placeholder{
+        font-size: 12px;
+        line-height: 14px;
+        color: #BDBEC2;
+
+      }
+    }
+
     .aside-filter__tab.tab--active{
       font-family:"SFProDisplay-Bold", sans-serif;
       font-weight: 700;
@@ -988,12 +1013,19 @@
       display: flex;
       justify-content: space-between;
       border-bottom: 2px solid #C4C4C4;
+      margin-bottom: 25px;
     }
 
     .filter-style__list-item{
       font-family: Barlow, sans-serif;
       font-size: 14px;
       line-height: 17px;
+    }
+
+    .filter-style--country{
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
     }
 
     .jq-selectbox__select {
@@ -1008,8 +1040,10 @@
       border-radius: 0;
       text-shadow: none;
       border: none;
-      &:hover{
+      &:hover,
+      &:active{
       background: transparent;
+        box-shadow: none;
        }
     }
 
@@ -1029,14 +1063,7 @@
       height: 8px;
       background-image: url(../img/arrow-down.svg);
       border: none;
-      transform: rotate(0);
-      transition: all ease-in-out .4s;
     }
-
-    //.jq-selectbox__trigger-arrow--active {
-    //  transform: rotate(180deg);
-    //}
-
 
     .jq-selectbox li{
       color: rgba(0, 0, 0, 0.6);
@@ -1045,7 +1072,7 @@
 
     .jq-selectbox li.selected,
     .jq-selectbox li:hover{
-      background-color: transparent;
+      background: rgba(107, 126, 172, 0.05);
       color: rgba(0, 0, 0, 0.6);
     }
 
@@ -1070,6 +1097,51 @@
           padding-bottom: 10px;
         }
       }
+    }
+    .jq-selectbox.focused .jq-selectbox__select{
+      border: none;
+    }
+
+    .btn-sale .aside-filter__content{
+      flex-wrap: nowrap;
+    }
+
+    .btn-sale .aside-filter__content-label{
+      position: relative;
+    }
+
+    .btn-sale__text{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-60%);
+      font-family:"SFProDisplay-Bold", sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.07em;
+      color: #C4C4C4;
+    }
+
+    .btn-sale .jq-checkbox {
+      width: 60px;
+      height: 25px;
+      background: #F0F0F4;
+      border-radius: 0;
+      vertical-align: -7px;
+      border: none;
+    }
+
+    .btn-sale .jq-checkbox.checked{
+      background: #1C62CD;
+    }
+
+    .btn-sale .jq-checkbox.checked ~ .btn-sale__text{
+      color: #fff;
+    }
+
+    .btn-sale .jq-checkbox.checked .jq-checkbox__div {
+      display: none;
     }
 
 
