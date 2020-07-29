@@ -56,7 +56,7 @@
         $('.filter-style').styler();
 
 
-        $('.filter__item-drop ').on('click', function() {
+        $('.filter__item-drop, .filter-extra').on('click', function() {
 
             $(this).toggleClass('filter__item-drop--active');
 
@@ -74,6 +74,31 @@
             skin: "round"
 
         });
+
+
+    //    Buttons Grid/Line
+
+        $('.catalog__filter-button').on('click', function () {
+
+            $($(this).siblings()).removeClass('catalog__filter-button--active');
+
+            $(this).addClass('catalog__filter-button--active');
+        });
+
+
+    //    Switching between grid/line
+
+        $('.catalog__filter-btnLine').on('click', function () {
+
+            $('.products__item-wrapper').addClass('products__item-wrapper--line');
+        });
+
+        $('.catalog__filter-btnGrid').on('click', function () {
+
+            $('.products__item-wrapper').removeClass('products__item-wrapper--line');
+        });
+
+
 
 
 
