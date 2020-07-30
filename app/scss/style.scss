@@ -1277,6 +1277,72 @@
     }
 
 
+    //product-page
+
+    .product-card{
+      margin-bottom: 82px;
+      &__inner{
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__img-box{
+        width: 500px;
+        padding-top: 64px;
+        text-align: center;
+        font-family: Barlow, sans-serif;
+        position: relative;
+
+        &::before{
+          font-size: 15px;
+          line-height: 18px;
+          width: 94px;
+          height: 44px;
+          padding: 11px 15px 8px;
+          border-radius: 3px;
+        }
+      }
+
+      &__content{
+        width: 570px;
+      }
+
+      &__price-old{
+        font-size: 30px;
+        line-height: 36px;
+        opacity: 0.6;
+        position: relative;
+
+        &::after{
+            content: '';
+            background-image: url('../img/old-price-line.svg');
+            background-repeat: no-repeat;
+            width: 132px;
+            height: 21px;
+            position: absolute;
+            right: 190px;
+            top: 8px;
+        }
+      }
+
+      &__price-new{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        color: #2F3035;
+        margin: 6px 0 17px;
+      }
+
+      &__link{
+        font-size: 15px;
+        line-height: 18px;
+        color: #1C62CD;
+      }
+    }
+
+
+
+
 
 
 
