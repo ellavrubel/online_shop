@@ -1338,6 +1338,49 @@
         line-height: 18px;
         color: #1C62CD;
       }
+
+      &__title{
+        font-family:"SFProDisplay-Bold", sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 10px;
+      }
+
+      &__code{
+        font-size: 15px;
+        line-height: 18px;
+        opacity: 0.6;
+        margin-bottom: 21px;
+      }
+
+      &__buttons{
+        margin-bottom: 50px;
+      }
+
+      &__tab{
+        font-size: 20px;
+        line-height: 24px;
+        opacity: 0.6;
+        padding-bottom: 5px;
+      }
+
+      &__tab + &__tab {
+        margin-left: 34px;
+      }
+
+    }
+    .product-card__tab.tab--active{
+      font-family:"SFProDisplay-Bold", sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      opacity: 1;
+      border-bottom: 2px solid #1C62CD;;
+    }
+
+    .tabs{
+      margin-bottom: 20px;
     }
 
 
