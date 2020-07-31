@@ -7,6 +7,7 @@
     <title>ONLINE_SHOP</title>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -160,16 +161,19 @@
                 </p>
                 <div class="product-card__buttons">
 
-                    <button class="product-card__icon-favorite">
+                    <a class="product-card__icon-favorite" href="#">
                         <img class="product-card__favorite-img" src="img/heart-icon.svg" alt="">
-                    </button>
+                    </a>
 
-                    <button class="product-card__icon-rating">
+                    <a class="product-card__icon-rating" href="#">
                         <img class="product-card__rating-img" src="img/rating-icon.svg" alt="">
-                    </button>
+                    </a>
 
-
-
+                    <a class="rate" href="#">
+                        <div class="rate-yo"
+                             data-rateyo-rating="4"
+                             data-rateyo-rated-fill="#1C62CD"></div>
+                    </a>
                 </div>
 
                 <div class="tabs-wrapper product-card__tabs">
@@ -216,10 +220,127 @@
                     </div>
 
                 </div>
-
             </div>
         </div>
     </div>
+</section>
+
+<section class="product-details__tabs">
+    <div class="container">
+
+        <div class="tabs-wrapper product-details__tabs-wrapper">
+
+            <div class="tabs product-details__tabs-inner">
+                <a class="tab product-details__tab" href="#details-1">О товаре</a>
+                <a class="tab product-details__tab" href="#details-2">Характеристики</a>
+                <a class="tab product-details__tab" href="#details-3">Отзывы</a>
+                <a class="tab product-details__tab tab--active" href="#details-4">Самовывоз</a>
+                <a class="tab product-details__tab" href="#details-5">Доставка</a>
+                <a class="tab product-details__tab" href="#details-6">Cервис</a>
+                <a class="tab product-details__tab" href="#details-7">Гарантия</a>
+            </div>
+
+            <div class="tabs-container product-details__tabs-container">
+                <div id="details-1" class="tabs-content product-details__tabs-content">content</div>
+                <div id="details-2" class="tabs-content product-details__tabs-content">content</div>
+                <div id="details-3" class="tabs-content product-details__tabs-content">content</div>
+                <div id="details-4" class="tabs-content product-details__tabs-content tabs-content--active">
+
+                    <form class="product-details__form">
+                        <div class="product-details__top-line">
+                            <label class="product-details__label">
+                                Магазин
+                                <input class="product-details__input" type="text">
+                            </label>
+
+                            <label>
+                                <input  class="product-details__delivery filter-style" type="radio" name="delivery">
+                                Забрать сегодня
+                            </label>
+
+                            <label>
+                                <input  class="product-details__delivery filter-style" type="radio" name="delivery" checked>
+                                Забрать в течение недели
+                            </label>
+                        </div>
+                    </form>
+
+                    <ul class="product-details__list">
+
+                        <li class="product-details__list-item list-item__title">
+                            <div class="list-item__title">Адрес</div>
+                            <div class="list-item__title">Режим работы</div>
+                            <div class="list-item__title">Доступно</div>
+                            <div class="list-item__title">Количество</div>
+                            <div class="list-item__title"></div>
+                        </li>
+
+                        <li class="product-details__list-item">
+                            <div class="list-item__part">Москва, ул. Науки 25</div>
+                            <div class="list-item__part">
+                                <span class="list-item__workhours1"> пн-сб: 08:00-19:00 </span>
+                                <span class="list-item__workhours2"> вс: 09:00-17:00 </span>
+                            </div>
+                            <div class="list-item__part">В наличии</div>
+                            <div class="list-item__part">1</div>
+                            <div class="list-item__part">
+                                <button class="list-item__btn" type="submit"> купить </button>
+                            </div>
+                        </li>
+
+                        <li class="product-details__list-item">
+                            <div class="list-item__part">Москва, ул.  Южная 134</div>
+                            <div class="list-item__part">
+                                <span class="list-item__workhours1"> пн-сб: 08:00-19:00 </span>
+                                <span class="list-item__workhours2"> вс: 09:00-17:00 </span>
+                            </div>
+                            <div class="list-item__part">Нет в наличии</div>
+                            <div class="list-item__part">0</div>
+                            <div class="list-item__part">
+                                <button class="list-item__btn" type="submit"> купить </button>
+                            </div>
+                        </li>
+
+                        <li class="product-details__list-item">
+                            <div class="list-item__part">
+                                Санкт-Петербург,
+                                ул. Красная 19
+                            </div>
+                            <div class="list-item__part">
+                                <span class="list-item__workhours1"> пн-сб: 08:00-19:00 </span>
+                                <span class="list-item__workhours2"> вс: 09:00-17:00 </span>
+                            </div>
+                            <div class="list-item__part">Нет в наличии</div>
+                            <div class="list-item__part">0</div>
+                            <div class="list-item__part">
+                                <button class="list-item__btn" type="submit"> купить </button>
+                            </div>
+                        </li>
+
+                        <li class="product-details__list-item">
+                            <div class="list-item__part">Киев, ул Шевченко 167</div>
+                            <div class="list-item__part">
+                                <span class="list-item__workhours1"> пн-сб: 08:00-19:00 </span>
+                                <span class="list-item__workhours2"> вс: 09:00-17:00 </span>
+                            </div>
+                            <div class="list-item__part"> в наличии</div>
+                            <div class="list-item__part">3</div>
+                            <div class="list-item__part">
+                                <button class="list-item__btn" type="submit"> купить </button>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div id="details-5" class="tabs-content product-details__tabs-content">content</div>
+                <div id="details-6" class="tabs-content product-details__tabs-content">content</div>
+                <div id="details-7" class="tabs-content product-details__tabs-content">content</div>
+            </div>
+
+        </div>
+    </div>
+
 </section>
 
 
@@ -328,6 +449,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/libs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

@@ -29,8 +29,7 @@
                 'node_modules/slick-carousel/slick/slick.scss',
                 'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
                 'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css',
-                'node_modules/ion-rangeslider/css/ion.rangeSlider.min.css',
-                'node_modules/rateyo/lib/cjs/rateyo.min.css'
+                'node_modules/ion-rangeslider/css/ion.rangeSlider.min.css'
             ])
                 .pipe(concat('libs.scss'))
                 .pipe(gulp.dest('app/scss'))
@@ -47,8 +46,7 @@
                 'node_modules/jquery/dist/jquery.min.js',
                 'node_modules/jquery-form-styler/dist/jquery.formstyler.min.js',
                 'node_modules/slick-carousel/slick/slick.js',
-                'node_modules/ion-rangeslider/js/ion.rangeSlider.min.js',
-                'node_modules/rateyo/lib/cjs/rateyo.min.js'
+                'node_modules/ion-rangeslider/js/ion.rangeSlider.min.js'
             ])
                 .pipe(concat('libs.min.js'))
                 .pipe(uglify())

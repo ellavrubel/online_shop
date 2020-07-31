@@ -1281,9 +1281,14 @@
 
     .product-card{
       margin-bottom: 82px;
+
       &__inner{
         display: flex;
         justify-content: space-between;
+      }
+
+      &__list{
+        margin-bottom: 20px;
       }
 
       &__img-box{
@@ -1356,6 +1361,9 @@
 
       &__buttons{
         margin-bottom: 50px;
+        a+a{
+          margin-left: 25px;
+        }
       }
 
       &__tab{
@@ -1369,7 +1377,50 @@
         margin-left: 34px;
       }
 
+      &__item{
+        padding: 15px 0 6px;
+        border-bottom: 1px solid rgba(47, 48, 53,.1);
+        width: 436px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__left{
+        padding-right: 15px;
+      }
+
+      &__right{
+        width: 125px;
+      }
+
+      &__more{
+        font-size: 14px;
+        line-height: 17px;
+        padding-bottom: 1px;
+        border-bottom: 1px solid #1C62CD ;
+        color: #1C62CD;
+        margin-bottom: 40px;
+      }
+
+      &__btn{
+        display: block;
+        padding: 15px 53px 18px;
+        background: #1C62CD;
+        border-radius: 3px;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #fff;
+        transition: all ease 2s;
+
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+
     }
+
     .product-card__tab.tab--active{
       font-family:"SFProDisplay-Bold", sans-serif;
       font-weight: 700;
@@ -1380,7 +1431,66 @@
     }
 
     .tabs{
-      margin-bottom: 20px;
+      margin-bottom: 5px;
+    }
+
+    // RateYo
+
+    .rate{
+      transform: translateY(-3px);
+    }
+
+    // product-details__tabs
+
+    .product-details__tabs{
+      margin-bottom: 100px;
+
+      &-inner{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #F0F0F4;
+        padding: 22px 0;
+        margin-bottom: 51px;
+
+        a{
+          font-size: 20px;
+          line-height: 24px;
+          opacity: 0.6;
+          padding-bottom: 5px;
+        }
+      }
+    }
+
+    .product-details__tab.tab--active{
+        border-bottom: 2px solid #1C62CD;
+        opacity: 1;
+    }
+
+    .product-details{
+      &__top-line{
+        margin-bottom: 50px;
+      }
+
+      &__label{
+        font-size: 17px;
+        line-height: 20px;
+        color: rgba(47, 48, 53,.7);
+      }
+
+      &__input{
+        margin: 0 100px 0 17px;
+        width: 313px;
+        background: #F0F0F4;
+        border-radius: 3px;
+        border: none;
+        padding: 8px 37px 8px 17px;
+      }
+
+      &__delivery{
+        margin-left: 54px;
+      }
+
     }
 
 

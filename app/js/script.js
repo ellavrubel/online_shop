@@ -99,6 +99,15 @@
         });
 
 
+    //    RateYo
+
+        $(".rate-yo").rateYo({
+            normalFill: "#C4C4C4",
+            starWidth: "23px",
+            spacing: "7px"
+        });
+
+
 
 
 
