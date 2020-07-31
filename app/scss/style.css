@@ -3255,6 +3255,9 @@ input[type=submit].styler[disabled] {
 }
 .product-details__delivery {
   margin-left: 54px;
+  font-size: 17px;
+  line-height: 20px;
+  color: rgba(47, 48, 53, 0.7);
 }
 
 /*# sourceMappingURL=style.css.map */
