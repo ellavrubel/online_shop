@@ -1494,6 +1494,72 @@
         color: rgba(47, 48, 53,.7);
       }
 
+      &__list-item{
+        display: flex;
+        padding: 20px 0;
+        span{
+          display: block;
+        }
+        &__title{
+          font-size: 20px;
+          line-height: 24px;
+        }
+
+      }
+      &__list-item + &__list-item{
+        border-bottom: 1px solid rgba(47, 48, 53,.1);
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(47, 48, 53,.7);
+      }
+    }
+
+    .list-item__part {
+
+      &-address {
+        width: 219px;
+        margin-right: 81px;
+
+      }
+
+      &-workHours {
+        width: 155px;
+        margin-right: 95px;
+      }
+
+      &-available {
+        width: 140px;
+        margin-right: 90px;
+      }
+
+      &-num {
+        width: 104px;
+        //margin-right: 132px;
+      }
+
+      &-btn {
+        margin-left: auto;
+      }
+    }
+
+    .list-item {
+
+      &__workHours1,
+      &__workHours2 {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__btn {
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0.12em;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        padding: 9px 40px;
+        background: #1C62CD;
+        border-radius: 3px;
+      }
     }
 
 
@@ -1533,4 +1599,8 @@
 
 
 
-    @import "media.scss";
+
+
+
+      @import "media.scss";
+
