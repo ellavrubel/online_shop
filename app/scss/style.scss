@@ -101,6 +101,44 @@
           }
         }
       }
+
+      .menu__btn{
+        display: none;
+      }
+
+      .menu-mobile{
+
+        &__list{
+          position: absolute;
+          width: 243px;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+          transform: translateX(-110%);
+          transition: all ease-in-out 1s;
+          &--active{
+            transform: translateX(0);
+            background: #fff;
+          }
+        }
+
+        &__item{
+          position: relative;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        &__link{
+          padding: 36px 0 0 53px;
+        }
+
+        &__icon{
+          position: absolute;
+          left: 11px;
+          bottom: 0;
+        }
+
+        &__line-wrapper{
+          display: none;
+        }
+      }
     }
 
 
@@ -1534,7 +1572,6 @@
 
       &-num {
         width: 104px;
-        //margin-right: 132px;
       }
 
       &-btn {
