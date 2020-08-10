@@ -1,4 +1,26 @@
 
+@media screen and (max-width: 1200px){
+
+  .banner-section{
+    &__inner {
+      justify-content: center;
+    }
+    &__slider{
+      max-width: 600px;
+      margin-right: 50px;
+
+      &-img{
+        max-width: 600px;
+        min-height: 380px;
+        object-fit: cover;
+      }
+    }
+  }
+
+
+}
+
+
 @media screen and (max-width: 1100px){
 
   .header {
@@ -12,18 +34,13 @@
   }
 }
 
-@media screen and (max-width: 1100px) {
-
-  .header{
-    &__address{
-      margin-right: -9px;
-    }
-  }
-}
 
 @media screen and (max-width: 968px) {
 
   .header {
+
+    padding-bottom: 25px;
+
     &__bottom {
       display: none;
     }
@@ -42,12 +59,12 @@
         border-radius: 3px;
         margin: 8px 0;
       }
-
     }
 
     .menu-mobile {
 
-      &__line-wrapper{
+      &__line-wrapper {
+
         display: block;
         background: #F0F0F4;
         font-family: "SFProDisplay-Bold", sans-serif;
@@ -56,6 +73,7 @@
         line-height: 24px;
         padding: 15px 0 15px 15px;
         overflow-x: scroll;
+
       }
 
       &__line {
@@ -66,7 +84,37 @@
         }
       }
     }
+
   }
+
+  .banner-section {
+    &__inner {
+      flex-wrap: wrap;
+    }
+
+    &__slider {
+      max-width: 100%;
+      margin: 0 0 40px 0;
+
+      &-img {
+        max-width: 100%;
+      }
+
+      &-item {
+        text-align: center;
+      }
+    }
+  }
+  .mobile-overflow{
+    width: 1000px;
+  }
+  .tabs-wrapper{
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 780px) {
+
 }
 
 @media screen and (max-width: 640px) {
@@ -75,10 +123,39 @@
     &__address{
       display: none;
     }
+  }
 
+  .banner-section {
+
+    .container{
+      padding: 0;
+    }
+
+    &__slider {
+      max-height: 329px;
+
+      &-img {
+        object-fit: contain;
+        min-height: 217px;
+      }
+    }
   }
 
 }
+
+@media screen and (max-width: 440px) {
+
+  .banner-section {
+
+    &__slider {
+      &-img {
+        min-height: 164px;
+      }
+    }
+  }
+
+}
+
 
 
 
