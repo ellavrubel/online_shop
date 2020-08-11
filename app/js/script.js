@@ -53,7 +53,40 @@
             infinite: true,
             slidesToShow: 4,
             slidesToScroll: 1, prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnLeft products-left-grey"><img src="img/arrow-left-grey.svg" alt=""></button>',
-            nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnRight products-right-grey"><img src="img/arrow-right-grey.svg" alt=""></button>'
+            nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnRight products-right-grey"><img src="img/arrow-right-grey.svg" alt=""></button>',
+            responsive: [
+                {
+                    breakpoint: 1301,
+                    settings: {
+                        arrows: false,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 1201,
+                    settings: {
+                        slidesToShow: 3,
+                        arrows: false,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 880,
+                    settings: {
+                        slidesToShow: 2,
+                        arrows: false,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 590,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: false,
+                        dots: true
+                    }
+                }
+            ]
 
         });
 
