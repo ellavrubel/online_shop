@@ -580,6 +580,10 @@
         margin-top: 35px;
         text-align: center;
 
+        &--popular{
+          display: none;
+        }
+
         &-link{
           padding: 17px 43px;
           background-color: #F0F0F4;
@@ -616,6 +620,13 @@
     }
 
     //
+
+    // banner
+
+    .banner__img--mobile{
+      display: none;
+    }
+
 
 
     // footer
