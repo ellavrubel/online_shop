@@ -97,7 +97,7 @@
         $('.filter-style').styler();
 
 
-        $('.filter__item-drop, .filter-extra').on('click', function() {
+        $('.filter__item-drop, .filter-extra, .info-title, .item3-title').on('click', function() {
 
             $(this).toggleClass('filter__item-drop--active');
 

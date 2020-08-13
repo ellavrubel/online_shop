@@ -201,7 +201,23 @@
       border-bottom: 2px solid #1C62CD;
     }
   }
+  .footer{
+    &__top-inner{
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+    }
+    &__top-item{
+      margin-bottom: 25px;
+    }
+
+    &__top-item3{
+      transform: translateX(-14px);
+    }
+  }
+
 }
+
 
 @media screen and (max-width: 640px) {
 
@@ -261,6 +277,50 @@
 
 }
 
+@media screen and (max-width: 540px){
+
+  .footer{
+    &__top{
+      &-item{
+        width: 100%;
+      }
+      &-newsletter,
+      &-social{
+        margin-right: 0;
+      }
+      &-title--newsletter{
+        text-align: center;
+        width: 290px;
+        margin: 0 auto;
+      }
+      &-item3{
+        transform: translateX(0);
+      }
+
+    }
+    &__form{
+      justify-content: center;
+    }
+
+    &__bottom{
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      &-link{
+        width: 100%;
+        margin: 0;
+
+        &:not(:last-child) {
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+
+}
+
+
+
 @media screen and (max-width: 440px) {
 
   .banner-section {
@@ -306,6 +366,69 @@
         display: block;
       }
     }
+  }
+
+  .footer {
+    background: #F9F9FC;
+
+    &__form{
+      padding-bottom: 40px;
+    }
+    &__top{
+
+      &-item{
+        margin-bottom: 0;
+      }
+
+      &-title{
+        margin-top: 0;
+      }
+
+    &-newsletter,
+    &-item--info,
+    &-item3 {
+      border-bottom: 2px solid #F0F0F4;
+    }
+      &-item--info,
+      &-item3 {
+        margin: 0;
+        padding: 16px 0;
+
+        .footer__top-title {
+          font-family:"SFProDisplay-Medium", sans-serif;
+          font-weight: 500;
+          line-height: 18px;
+          letter-spacing: -0.0861538px;
+          color: #7F7F7F;
+        }
+      }
+    }
+    .social-list{
+      padding-top: 30px;
+    }
+    .social-list,
+    .footer-list{
+      display: none;
+    }
+
+    .info-title,
+    .item3-title{
+
+      position: relative;
+
+      &:after{
+        position: absolute;
+        right: 14px;
+        top: 5px;
+        content: "";
+        background-image: url(../img/arrow-down.svg);
+        width: 13px;
+        height: 8px;
+
+
+      }
+    }
+
   }
 
 }
