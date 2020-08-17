@@ -95,8 +95,6 @@
       }
     }
   }
-
-
 }
 
 
@@ -216,6 +214,40 @@
     }
   }
 
+}
+
+@media screen and (max-width: 770px){
+
+  .aside__btn{
+    display: block;
+  }
+
+  .catalog{
+
+    &__inner{
+      flex-wrap: wrap;
+
+      &-aside{
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+      }
+    }
+
+    &__filter{
+      flex-wrap: wrap;
+
+      &-items{
+        order: 2;
+        width: 100%;
+      }
+
+      &-btn{
+        order: 1;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  }
 }
 
 
@@ -406,7 +438,7 @@
     .social-list{
       padding-top: 30px;
     }
-    .social-list,
+
     .footer-list{
       display: none;
     }
@@ -424,8 +456,6 @@
         background-image: url(../img/arrow-down.svg);
         width: 13px;
         height: 8px;
-
-
       }
     }
 

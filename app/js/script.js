@@ -158,6 +158,15 @@
         });
 
 
+    //    Catalog-page Filter button
+
+        $('.aside__btn').on('click', function(){
+
+            $(this).next().slideToggle();
+
+        });
+
+
 
 
 
