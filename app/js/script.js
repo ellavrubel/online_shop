@@ -162,7 +162,7 @@
 
         $('.aside__btn').on('click', function(){
 
-            $(this).next().slideToggle();
+            $(this).next().slideToggle(1000);
 
         });
 
