@@ -109,6 +109,14 @@
       margin-right: 20px;
     }
   }
+  .product-details{
+      &__delivery {
+        margin-left: 18px;
+      }
+    &__input{
+      margin: 0 0 0 17px;
+    }
+  }
 }
 
 
@@ -117,6 +125,10 @@
   .header {
 
     padding-bottom: 25px;
+
+    &__product-page{
+      padding-bottom: 0;
+    }
 
     &__bottom {
       display: none;
@@ -163,6 +175,10 @@
     }
   }
 
+  .breadcrumbs__product-page{
+    margin: 20px 0 40px;
+  }
+
   .banner-section {
     &__inner {
       flex-wrap: wrap;
@@ -185,7 +201,8 @@
     width: 1000px;
   }
   .tabs-wrapper,
-  .catalog__filter-itemsInner {
+  .catalog__filter-itemsInner,
+  .breadcrumbs__inner {
     overflow-x: scroll;
   }
   .search{
@@ -240,6 +257,82 @@
         order: 1;
       }
     }
+  }
+
+  .product-card{
+
+    &__mobile-btn{
+      display: block;
+      width: 100%;
+      margin-top: 40px;
+    }
+    &__inner{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__img-box{
+      order: 2;
+      padding-top: 0;
+    }
+    &__content{
+      order: 1;
+    }
+    &__tabs{
+      display: none;
+    }
+    &__title{
+      margin: 0 0 40px;
+      h1 {
+        margin: 0;
+      }
+    }
+    &__code{
+      margin-bottom: 5px;
+    }
+  }
+
+  .product-details{
+
+    &__tabs-inner{
+      flex-direction: column;
+      align-items: flex-start;
+      background: none;
+      margin-bottom: 40px;
+      a{
+        opacity: 1;
+      }
+    }
+
+    &__tab + &__tab{
+      margin-top: 35px;
+    }
+
+    &__form{
+      label{
+        display: block;
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+    &__input{
+      display: block;
+      margin: 12px 0 0 0;
+      background: transparent;
+      border: 1px solid #F0F0F4;
+
+    }
+    &__delivery{
+      border-bottom: 0.5px solid #C4C4C4;
+      padding: 14px 0 8px;
+    }
+    &__label{
+      margin-bottom: 40px;
+    }
+  }
+
+  .product-details__tab.tab--active {
+    border-bottom: none;
+    font-weight: 700;
   }
 
   .footer{
@@ -316,6 +409,16 @@
     }
   }
 
+  .product-card{
+    &__title{
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &__img{
+      width: 100%;
+    }
+  }
+
 }
 
 @media screen and (max-width: 568px){
@@ -329,6 +432,16 @@
 }
 
 @media screen and (max-width: 540px){
+
+
+  .product-card{
+    &__price-old{
+      text-decoration: line-through;
+      &:after{
+        display: none;
+      }
+    }
+  }
 
   .footer{
     &__top{

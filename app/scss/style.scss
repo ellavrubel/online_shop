@@ -1475,6 +1475,10 @@
 
     }
 
+    .product-card__mobile-btn{
+      display: none;
+    }
+
     .product-card__tab.tab--active{
       font-family:"SFProDisplay-Bold", sans-serif;
       font-weight: 700;
