@@ -1526,6 +1526,11 @@
     }
 
     .product-details{
+
+      &__showShops{
+        display: none;
+      }
+
       &__top-line{
         margin-bottom: 50px;
       }
@@ -1534,15 +1539,29 @@
         font-size: 17px;
         line-height: 20px;
         color: rgba(47, 48, 53,.7);
+        position: relative;
       }
 
-      &__input{
+      &__input {
         margin: 0 100px 0 17px;
         width: 313px;
         background: #F0F0F4;
         border-radius: 3px;
         border: none;
         padding: 8px 37px 8px 17px;
+
+        &::placeholder{
+          font-family: Barlow, sans-serif;
+          font-size: 15px;
+          line-height: 18px;
+          color: #C4C4C4;
+        }
+      }
+
+      &__input-img{
+        position: absolute;
+        right: 117px;
+        top: 1px;
       }
 
       &__delivery{
@@ -1564,7 +1583,8 @@
         }
 
       }
-      &__list-item + &__list-item{
+      &__list-item + &__list-item,
+      &__hiddenShops{
         border-bottom: 1px solid rgba(47, 48, 53,.1);
         font-size: 16px;
         line-height: 24px;

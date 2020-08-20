@@ -115,6 +115,18 @@
       }
     &__input{
       margin: 0 0 0 17px;
+      &-img{
+          right: 19px;
+      }
+    }
+  }
+  .list-item__part{
+    &-address {
+
+      margin-right: 19px;
+    }
+    &-available{
+      margin-right: 30px;
     }
   }
 }
@@ -202,7 +214,8 @@
   }
   .tabs-wrapper,
   .catalog__filter-itemsInner,
-  .breadcrumbs__inner {
+  .breadcrumbs__inner,
+  .product-details__tabs-wrapper {
     overflow-x: scroll;
   }
   .search{
@@ -293,20 +306,6 @@
 
   .product-details{
 
-    &__tabs-inner{
-      flex-direction: column;
-      align-items: flex-start;
-      background: none;
-      margin-bottom: 40px;
-      a{
-        opacity: 1;
-      }
-    }
-
-    &__tab + &__tab{
-      margin-top: 35px;
-    }
-
     &__form{
       label{
         display: block;
@@ -314,25 +313,29 @@
         margin-left: 0;
       }
     }
+
     &__input{
       display: block;
       margin: 12px 0 0 0;
       background: transparent;
       border: 1px solid #F0F0F4;
-
+      &-img{
+        display: none;
+      }
     }
+
     &__delivery{
       border-bottom: 0.5px solid #C4C4C4;
       padding: 14px 0 8px;
     }
+
     &__label{
       margin-bottom: 40px;
     }
   }
 
-  .product-details__tab.tab--active {
-    border-bottom: none;
-    font-weight: 700;
+  .list-item__part-workHours {
+    margin-right: 65px;
   }
 
   .footer{
@@ -350,6 +353,49 @@
     }
   }
 
+}
+
+@media screen and (max-width: 900px){
+
+  .product-details{
+
+    &__list-item{
+      display: none;
+
+      div{
+        margin-bottom: 20px;
+    }
+
+    &__list-item:nth-child(2) {
+      display: block;
+       }
+    }
+
+    &__showShops{
+      display: inline-block;
+      font-size: 16px;
+      line-height: 19px;
+      color: #1C62CD;
+      border-bottom: 1px solid  #1C62CD;
+      &-img{
+        margin-left: 10px;
+        width: 12px;
+        height: 8px;
+        transform: rotate(0);
+        transition: all ease-in-out .4s;
+        &--active{
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  .list-item{
+    &__title{
+      display: none;
+
+    }
+  }
 }
 
 

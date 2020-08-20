@@ -166,6 +166,15 @@
 
         });
 
+    //    Product page showShops
+
+        $('.product-details__showShops').on('click', function(){
+
+            $(this).nextAll().slideToggle(800);
+            $('.product-details__showShops-img').toggleClass('product-details__showShops-img--active');
+
+        });
+
 
 
 
