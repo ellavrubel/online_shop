@@ -54,7 +54,7 @@
                 .pipe(browserSync.reload({stream: true}))
         });
 
-        gulp.task('compress', function() {
+        gulp.task('compress', async function() {
             gulp.src('app/js/script.js')
                 .pipe(minify())
                 .pipe(gulp.dest('app/js'))
