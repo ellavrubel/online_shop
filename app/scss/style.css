@@ -2586,6 +2586,10 @@ input[type=submit].styler[disabled] {
   line-height: 12px;
   margin: 0 40px;
 }
+.footer .info-title,
+.footer .item3-title {
+  pointer-events: none;
+}
 
 .breadcrumbs {
   margin: -40px 0 40px;
@@ -3877,6 +3881,7 @@ input[type=submit].styler[disabled] {
   .footer .info-title,
 .footer .item3-title {
     position: relative;
+    pointer-events: auto;
   }
   .footer .info-title:after,
 .footer .item3-title:after {

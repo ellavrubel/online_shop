@@ -637,6 +637,7 @@
     .item3-title{
 
       position: relative;
+      pointer-events: auto;
 
       &:after{
         position: absolute;

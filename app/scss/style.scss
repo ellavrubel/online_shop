@@ -727,6 +727,11 @@
             margin: 0 40px;
           }
         }
+
+      .info-title,
+      .item3-title {
+        pointer-events: none;
+      }
       }
 
 
