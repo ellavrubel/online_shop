@@ -35,7 +35,7 @@
 
         //    initialization of a slider
 
-            $('.products-slider').slick('setPosition');
+            $('.products-slider, .banner-section__slider').slick('setPosition');
 
         });
 
